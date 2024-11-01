@@ -6,6 +6,7 @@ import aiofiles
 import random
 import requests
 import sys
+from colorama import Fore, Style, init
 
 socket = None
 ping_interval = None
@@ -14,6 +15,9 @@ potential_points = 0
 countdown = "Calculating..."
 points_total = 0
 points_today = 0
+
+#colorama
+init(autoreset=True)
 
 banner = r"""
  █████╗ ██╗██████╗ ██████╗ ██████╗  ██████╗ ██████╗      █████╗ ███████╗ ██████╗
